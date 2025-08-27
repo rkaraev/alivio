@@ -364,20 +364,22 @@ body {
 
 .our-product__left {
     position: relative;
-}
-
-.our-product__img {
-    padding-left: 55px;
+    width: 638px;
+    height: 573px;
+    background-image: url(../img/mikayla-1.png);
+    background-position: center center;
+    border-radius: 15px;
+    margin-left: 60px;
 }
 
 .our-product__card {
     position: absolute;
     top: 350px;
-    left: 0;
+    left: -60px;
     width: 296px;
     height: 293px;
-    background-color: var(--white-color);
     text-align: center;
+    background-color: var(--white-color);
     box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -560,12 +562,8 @@ body {
         padding-bottom: 150px;
     }
 
-    .our-product__img {
-        padding-left: 0;
-    }
-
-    .our-product__card {
-        left: -50px;
+    .our-product__left {
+        margin-left: 0;
     }
 
     /* footer */
@@ -644,12 +642,26 @@ body {
 
     /* our product */
     .our-product__card {
+        top: 380px;
         left: 0;
         width: 246px;
+        height: 250px;
     }
-    
+
     .our-product__card-wrap {
         padding: 10px 10px;
+    }
+    
+    .our-product__card-name {
+        margin-bottom: 10px;
+    }
+    
+    .our-product__card-text {
+        margin-bottom: 10px;
+    }
+    
+    .our-product__card-item {
+        margin-bottom: 5px;
     }
 
     .our-product__title {
@@ -671,13 +683,6 @@ body {
     .nav__menu-items {
         gap: 50px;
     }
-
-    /* our product */
-    .our-product__card {
-        top: 290px;
-        left: 0;
-        width: 200px;
-    }
 }
 
 @media screen and (max-width: 600px) {
@@ -689,25 +694,6 @@ body {
     .nav__menu-items {
         justify-content: center;
         gap: 25px;
-    }
-
-    /* our product */
-    .our-product__card {
-        top: 245px;
-        width: 150px;
-        height: 250px;
-    }
-
-    .our-product__card-name {
-        margin-bottom: 10px;
-    }
-
-    .our-product__card-text {
-        margin-bottom: 10px;
-    }
-
-    .our-product__card-item {
-        margin-bottom: 5px;
     }
 }
 
@@ -753,19 +739,8 @@ body {
         font-size: 30px;
     }
 
-    .our-product__img {
-        margin-bottom: 20px;
-    }
-
-    .our-product__left {
-        position: static;
-    }
-
     .our-product__card {
-        position: static;
-        margin: 0 auto;
-        width: 200px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        width: 180px;
     }
 
     /* footer */
